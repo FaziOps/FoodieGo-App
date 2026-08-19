@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "185254703062",
+    "project_id": "rest-app-841f3",
+    "storage_bucket": "rest-app-841f3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185254703062:android:261eb38e296b929799be77",
+        "android_client_info": {
+          "package_name": "com.example.restaurant_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu_1FqpwILckPMVaj4NpT8GU7a3ReyP4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
