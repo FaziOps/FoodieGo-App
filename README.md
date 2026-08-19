@@ -112,6 +112,7 @@ service cloud.firestore {
 }
 ```
 
+
 Treat this as a starting point, not a finished audit — get someone to
 review it against your actual `orderStatus` transition rules before
 production, especially the "no skipping steps" requirement, which needs a
