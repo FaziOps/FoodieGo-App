@@ -92,17 +92,20 @@ service cloud.firestore {
       );
 
       // Admin: accept / assign rider / (future) reject.
+      
       allow update: if isSignedIn() && role() == 'admin';
 
       // Rider: can only touch orderStatus on their own assigned order,
       // and only to the field the app sends — full status-flow validation
       // (no skipping steps) belongs in a Cloud Function trigger, not here;
       // rules alone cannot express "next status in sequence" cleanly.
+      
       allow update: if isSignedIn() && resource.data.riderId == request.auth.uid
                     && request.resource.data.diff(resource.data).affectedKeys()
                        .hasOnly(['orderStatus']);
 
       // Customer: can only add a rating to their own delivered order.
+      
       allow update: if isSignedIn() && resource.data.customerId == request.auth.uid
                     && resource.data.orderStatus == 'Delivered'
                     && request.resource.data.diff(resource.data).affectedKeys()
