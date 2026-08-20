@@ -28,7 +28,8 @@ things need YOUR project's values before this runs:
 
 Same constraint applies to `lib/features/notifications/data/datasources/fcm_data_source.dart`:
 actually sending a push notification requires the Firebase Admin SDK server-side.
-The client-side registration (storing the device token) is real; the send
+The client-side registration (storing the device token) is real; 
+the send
 call is a documented stub with a TODO, not a silent fake.
 
 ## Setup steps
@@ -114,7 +115,6 @@ service cloud.firestore {
   }
 }
 ```
-
 
 Treat this as a starting point, not a finished audit — get someone to
 review it against your actual `orderStatus` transition rules before
