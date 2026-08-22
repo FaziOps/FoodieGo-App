@@ -115,7 +115,6 @@ service cloud.firestore {
   }
 }
 ```
-
 Treat this as a starting point, not a finished audit — get someone to
 review it against your actual `orderStatus` transition rules before
 production, especially the "no skipping steps" requirement, which needs a
@@ -127,8 +126,7 @@ status X" without an extra `get()` call per write.
 These are wired with reasonable defaults but need your decision:
 - Order cancellation (`CancelOrderUseCase`) has no refund logic attached.
 - Order rejection by admin isn't implemented — only accept.
-- Rider online/offline toggle UI isn't built; `isOnline` exists on the
-  user doc and `GetAvailableRidersUseCase` filters on it, but nothing
-  in the rider UI flips it yet.
+- Rider online/offline toggle UI isn't built;
+  `isOnline` exists on the user doc and `GetAvailableRidersUseCase` filters on it, but nothing in the rider UI flips it yet.
 - `AddressForm` takes manual lat/lng entry — replace with a real place
   picker (Google Places Autocomplete) before shipping.
