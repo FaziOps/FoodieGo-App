@@ -102,7 +102,7 @@ import 'package:restaurant_app/features/notifications/domain/usecases/send_order
 final sl = GetIt.instance;
 
 /// Point this at your deployed Cloud Function / backend endpoint that
-/// creates a Stripe PaymentIntent using the secret key server-side.
+/// creates a Stripe PaymentIntent using the secret key server-side.And later on you can change it with yours API key
 const String kCreatePaymentIntentUrl =
     'https://REPLACE_WITH_YOUR_BACKEND/createPaymentIntent';
 
