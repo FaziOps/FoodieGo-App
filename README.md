@@ -1,6 +1,7 @@
 # Restaurant App — Flutter, Clean Architecture
 
 This project implements the PRD/architecture document exactly:
+
 `lib/core` (shared) + `lib/features/{auth,menu,cart,checkout,orders,navigation,rating,rider_management,notifications}`,
 each split into `domain/`, `data/`, `presentation/`.
 
