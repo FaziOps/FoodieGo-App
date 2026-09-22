@@ -50,6 +50,7 @@ You also need, in your Firebase project:
 
 ## Firestore security rules — non-negotiable
 
+
 The PRD's Non-Functional Requirements section says the order status flow
 must be enforced server-side, not just in the Flutter UI. This app's
 Flutter code assumes these rules (or equivalent Cloud Functions
