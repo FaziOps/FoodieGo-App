@@ -125,6 +125,7 @@ status X" without an extra `get()` call per write.
 
 ## Known gaps carried over from the PRD's "Open Decisions"
 
+
 These are wired with reasonable defaults but need your decision:
 - Order cancellation (`CancelOrderUseCase`) has no refund logic attached.
 - Order rejection by admin isn't implemented — only accept.
