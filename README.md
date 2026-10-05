@@ -1,5 +1,6 @@
 # Restaurant App — Flutter, Clean Architecture
 
+
 This project implements the PRD/architecture document exactly:
 
 `lib/core` (shared) + 
