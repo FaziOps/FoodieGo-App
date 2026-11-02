@@ -34,6 +34,7 @@ The client-side registration (storing the device token) is real;
 the send
 call is a documented stub with a TODO, not a silent fake.
 
+
 ## Setup steps
 
 ```bash
